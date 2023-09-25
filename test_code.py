@@ -6,7 +6,7 @@ class TestCode(unittest.TestCase):
     # 學生的資料會在這裡被載入
     # 這可以在Colab筆記本中完成，然後將DataFrame傳遞到測試類
     def setUp(self):
-        self.student_data = pd.read_csv('student_data.csv')  # 假設學生的數據是這樣載入的
+        self.student_data = pd.read_csv('final_admission.csv')  # 假設學生的數據是這樣載入的
 
     def test_discharge_summary(self):
         discharge_summary_count = self.student_data[self.student_data['CATEGORY'] == 'Discharge summary'].shape[0]
