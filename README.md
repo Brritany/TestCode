@@ -41,3 +41,7 @@ The unit tests include the following:
 ## Author
 
 Yong Zhen Huang
+
+## Pass Image
+![Pass Image](pass_image.jpg)
+
