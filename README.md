@@ -3,7 +3,7 @@
 
 ## Description
 
-This repository contains a unit test script (`test_code.py`) designed to validate student code in a Data Science project. The project involves data manipulation and analysis using Python, Pandas, and other relevant libraries.
+This repository contains a unit test script (`test_code.py`) designed to validate code in a Data Science project. The project involves data manipulation and analysis using Python, Pandas, and other relevant libraries.
 
 ## How to Use
 
@@ -29,9 +29,12 @@ unittest.TextTestRunner().run(suite)
 
 The unit tests include the following:
 
-1. `test_discharge_summary`: Validates that the DataFrame contains 'Discharge summary' records.
-2. `test_merged_data`: Checks if the DataFrame contains the columns 'SUBJECT_ID' and 'HADM_ID'.
-3. `test_final_admission`: Ensures that each 'SUBJECT_ID' appears only once in the DataFrame.
+1. `test_discharge_summary`: Checks if all 'Discharge summary' records are filtered from NOTEEVENTS.
+2. `test_merged_data`: Confirms whether the columns 'SUBJECT_ID' and 'HADM_ID' exist in the DataFrame, indicating successful merging of NOTEEVENTS, PATIENTS, and ADMISSIONS tables.
+3. `test_final_admission`: Ensures that each 'SUBJECT_ID' appears only once in the final `final_admission.csv`.
+4. `test_exclude_newborn`: Checks if all newborns have been excluded.
+5. `test_exclude_dih`: Checks if all in-hospital deaths have been excluded.
+6. `test_final_count`: Ensures that the final `final_admission.csv` has 32,174 records (as per your setup).
 
 ## Requirements
 
